@@ -1,0 +1,274 @@
+.wrapper-container {
+	width: 500px;
+	height: 510px;
+	margin: 0 auto;
+	background: url(bg.png);
+	overflow: hidden;
+	position: relative;
+}
+
+.start-activity {
+  position: absolute;
+  width: 100%;
+  height: 450px;
+  background: rgba(255, 255, 255, 0);
+  overflow: hidden;
+  z-index: 99;
+  top: 0px;
+}
+
+.left-side {
+	width: 230px;
+	float: left;
+	padding: 27px 0px 0px 0;
+	margin: 0 0 0 8px;
+	/* overflow: hidden; */
+}
+
+.object-reverse {
+	width: 101px;
+	height: 80px;
+	float: left;
+	margin: 10px 0 0 8px;
+	/* background: rebeccapurple; */
+	padding: 0;
+}
+
+.right-side li {
+	position: relative;
+	list-style-type: none;
+	width: 99px;
+	height: 74px;
+	float: left;
+	margin: 13px 0 0 9px;
+	/* background: red; */
+}
+
+.right-side li:nth-child(1), .right-side li:nth-child(2) {
+  margin-top: 28px;
+}
+
+.right-side .list-item-2 {
+	margin-left: 33px;
+}
+
+.draggable {
+	background-image: url(drop.png);
+	width: 100px;
+	background-size: 100% 100%;
+	height: 77px;
+	cursor: pointer;
+	color: black;
+	padding: 3px;
+	font-size: 11px;
+	line-height: 12px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+	position: relative;
+}
+
+.draggable > p {
+	margin: auto;
+}
+
+.wrong_drop {
+	background-image: url(wrong_drop.png);
+	background-size: 100% 100%;
+}
+
+
+.right-side {
+	position: relative;
+	width: 252px;
+	height: 462px;
+	float: left;
+	padding: 0;
+	background-image: url(droppable.png);
+	background-size: 100% 100%;
+	margin: 10px 0 0 2px;
+}
+
+.addElement {
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+.ondrage {
+  z-index: 999;
+}
+
+.restart-page {
+	display: none;
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: 190px;
+  z-index: 9999;
+  top: 140px;
+  left: 45px;
+}
+
+.grt-job {
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	padding-top: 35px;
+	font-size: 35px;
+	border-radius: 50%;
+	line-height: 38px;
+	text-shadow: 1px 0px 13px #000;
+	color: #fff;
+	margin-left: 20px;
+	margin-top: 15px;
+	border: 1px solid #555;
+	background: #b2d33f;
+	box-shadow: 1px 4px 17px #313030;
+}
+
+.first-btn {
+  position: absolute;
+  bottom:  -160px;
+  left: 5px;
+  width: 174px;
+  height: 47px;
+  background: url('restart_btn.png');
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  padding: 0px;
+  border: none;
+}
+
+.first-btn:hover {
+  background: url('restart_hover_btn.png');
+}
+
+.activtiy-part {
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  line-height: 18px;
+  width: 100%;
+  padding: 10px 40px 0px 25px;
+}
+
+.animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+.sub-title1 {
+  color: white;
+  position: absolute;
+  top: 57px;
+  right: 80px;
+  font-weight: bold;
+}
+
+.sub-title2 {
+  color: white;
+  position: absolute;
+  top: 363px;
+  right: 85px;
+  font-weight: bold;
+}
+
+.sub-title3 {
+  color: white;
+  position: absolute;
+  top: 573px;
+  right: 40px;
+  font-weight: bold;
+}
+.droppable > .draggable {
+	top: 13px ! important;
+	left: -2px ! important;
+	position: absolute ! important;
+}
+
+.testable {
+	position: absolute;
+	color: #fff;
+	left: 30px;
+}
+.non_testable {
+	position: absolute;
+	color: #fff;
+	right: 20px;
+}
+.interactive-button {
+	position: absolute;
+	right: 40px;
+	bottom: 2px;
+	background-image: url(i.png);
+	height: 26px;
+	width: 26px;
+}
+.interactive-button:hover {
+	background-image: url('i_hover.png')
+}
+.tooltip {
+	position: absolute;
+	top: 342px ! important;
+	left: 277px ! important;
+}
+.tooltip.top .tooltip-arrow {
+	left: 85%;
+}
+.tooltip-inner {
+	max-width: 200px;
+	width: 200px;
+	height: 130px;
+	padding: 10px 14px;
+	font-size: 12px;
+	color: #ddd7d7;
+	text-align: left;
+	text-decoration: none;
+	background-color: rgba(0,0,0,0.9);
+	border-radius: 4px;
+}
+.tooltip-inner > h2 {
+	margin: 0 0 4px 0;
+	font-size: 20px;
+	color: #e6dfdf;
+}
